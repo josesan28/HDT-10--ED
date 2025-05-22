@@ -3,7 +3,7 @@
  *  @version 1.0
  *  Descripción: Pruebas unitarias para la clase Floyd.
  *  Fecha de creación: 21/05/2025
- *  Fecha de última modificación: 21/05/2025
+ *  Fecha de última modificación: 22/05/2025
  */
 
 import org.junit.jupiter.api.Test;

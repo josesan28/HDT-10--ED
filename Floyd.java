@@ -3,7 +3,7 @@
  *  @version 1.0
  *  Descripción: Clase que implementa el algoritmo de Floyd.
  *  Fecha de creación: 20/05/2025
- *  Fecha de última modificación: 21/05/2025
+ *  Fecha de última modificación: 22/05/2025
  */
 
 import java.util.*;
@@ -13,6 +13,10 @@ public class Floyd {
     private int[][] next;
     private int V;
 
+    /**
+     * Constructor que inicializa el algoritmo de Floyd con una matriz de distancias inicial.
+     * @param initialDist Matriz de distancias inicial entre los vértices.
+     */
     public Floyd(int[][] initialDist) {
         this.V = initialDist.length;
         this.dist = new int[V][V];
@@ -26,6 +30,9 @@ public class Floyd {
         }
     }
 
+    /**
+     * Método que ejecuta el algoritmo de Floyd para calcular las distancias más cortas entre todos los pares de vértices.
+     */
     public void compute() {
         for (int k = 0; k < V; k++) {
             for (int i = 0; i < V; i++) {
@@ -45,10 +52,22 @@ public class Floyd {
         }
     }
     
+    /**
+     * Método que obtiene la distancia más corta entre dos vértices.
+     * @param i Índice del primer vértice.
+     * @param j Índice del segundo vértice.
+     * @return Distancia más corta entre los dos vértices.
+     */
     public int getDistance(int i, int j) {
         return dist[i][j];
     }
     
+    /**
+     * Método que obtiene el camino más corto entre dos vértices.
+     * @param i Índice del primer vértice.
+     * @param j Índice del segundo vértice.
+     * @return Lista de índices que representan el camino más corto entre los dos vértices.
+     */
     public List<Integer> getPath(int i, int j) {
         if (i == j) {
             List<Integer> path = new ArrayList<>();
@@ -68,6 +87,11 @@ public class Floyd {
         return path;
     }
 
+    /**
+     * Método que encuentra el centro del grafo.
+     * @param vertexNames Array de nombres de los vértices.
+     * @return Nombre del vértice central.
+     */
     public String findGraphCenter(String[] vertexNames) {
         if (vertexNames == null || vertexNames.length != V) {
             throw new IllegalArgumentException("El array de nombres no coincide con el tamaño del grafo");

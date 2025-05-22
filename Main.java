@@ -3,7 +3,7 @@
  *  @version 1.0
  *  Descripción: Clase principal que implementa un sistema de modelado de red de rutas
  *  Fecha de creación: 21/05/2025
- *  Fecha de última modificación: 21/05/2025
+ *  Fecha de última modificación: 22/05/2025
  */
 
 import java.util.*;
