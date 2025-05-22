@@ -3,7 +3,7 @@
  *  @version 1.0
  *  Descripción: Clase que implementa un grafo dirigido utilizando una matriz de adyacencia.
  *  Fecha de creación: 20/05/2025
- *  Fecha de última modificación: 20/05/2025
+ *  Fecha de última modificación: 21/05/2025
  *  Fuentes: implementación basada en el libro Java Structures de Duane A. Bailey
  */
 
